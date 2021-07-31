@@ -1,0 +1,4 @@
+@mixin button-padding($pad-lr) {
+  padding-left: $pad-lr;
+  padding-right: $pad-lr;
+}
