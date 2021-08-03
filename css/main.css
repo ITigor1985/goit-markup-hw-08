@@ -744,10 +744,6 @@ body {
   border-top: hidden;
 }
 
-.list-card__content_padding-bottom {
-  padding-bottom: 56px;
-}
-
 .list-card__title {
   font-weight: 700;
   font-size: 18px;
@@ -763,6 +759,10 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .list-card__content_padding-bottom {
+    padding-bottom: 56px;
+  }
+
   .list-card {
     display: flex;
     flex-wrap: wrap;
@@ -779,7 +779,11 @@ body {
     margin-bottom: 0px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
+  .list-card__content_padding-bottom {
+    padding-bottom: 20px;
+  }
+
   .list-card > .list-card__item {
     flex-basis: calc(100% / 3 - var(--card-set-gap));
     margin-left: var(--card-set-gap);
