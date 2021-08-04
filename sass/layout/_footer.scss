@@ -116,6 +116,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .tablet-container {
+        justify-content: start;
+    }
     .footer {
         width: 100%;
         margin: 0 auto;
@@ -129,17 +132,22 @@
     }
     .address-container {
         text-align: left;
+        margin-right: 70px;
+        margin-bottom: 0;
     }
     .address__text {
         margin-bottom: 9px;
+        width: 100%;
+        white-space: nowrap;
     }
     .address__link_margin_inline-block {
         margin-bottom: 9px;
     }
     .social-wrapper {
         text-align: left;
-        margin-left: 70px;
         margin-top: 12px;
+        margin-left: 0;
+        margin-bottom: 0;
     }
     .social-wrapper__text {
         margin-top: 0;

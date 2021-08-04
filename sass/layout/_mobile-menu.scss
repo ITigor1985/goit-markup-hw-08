@@ -13,6 +13,7 @@
     top: 0;
     width: 100vw;
     height: 100vh;
+    color: #212121;
     background-color: #fff;
     overflow: auto;
     opacity: 0;
@@ -99,22 +100,23 @@
     }
 }
 
-.social-links__link {
+.menu-social-links__link {
     @include font(18px, 22px);
     font-weight: 500;
     color: var(--accent-color);
 }
 
-.social-links {
+.menu-social-links {
     display: flex;
+    justify-content: start;
     position: relative;
 }
 
-.social-links__item:not(:last-child) {
+.menu-social-links__item:not(:last-child) {
     margin-right: 20px;
 }
 
-.social-links__item--decor:after {
+.menu-social-links__item--decor:after {
     content: '';
     position: absolute;
     top: 10px;
