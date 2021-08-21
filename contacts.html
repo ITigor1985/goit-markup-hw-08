@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body>
+    <header class="header header_border-bottom">
+        <div class="container header__container">
+            <nav class="site-nav">
+                <a href="/" class="logo header__logo">
+                    <spun class="logo__text_accent-color">Web</spun>Studio
+                </a>
+                <ul class="site-nav__list list">
+                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студия</a></li>
+                    <li class="site-nav__item">
+                        <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="./contacts.html" class="site-nav__link site-nav__link_current">Контакты</a>
+                    </li>
+                </ul>
+                <button type="button" class="burger-btn" data-menu-open>
+            <svg class="header__icon-menu current-color">
+              <use href="./images/symbol-defs.svg#icon-menu"></use>
+            </svg>
+          </button>
+            </nav>
+            <ul class="header__contact list">
+                <li class="header__contact-item">
+                    <a href="mailto:info@devstudio.com" class="header__contact-link">
+                        <svg class="header__icon-envelope current-color">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+              </svg> info@devstudio.com
+                    </a>
+                </li>
+                <li class="header__contact-item">
+                    <a href="tel:+380961111111" class="header__contact-link">
+                        <svg class="header__icon-vector current-color">
+                <use href="./images/symbol-defs.svg#icon-vector"></use>
+              </svg> +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="contakt-page-contakts contakt-page__section">
+            <div class="container">
+                <div class="contakt-page__elements">
+                    <div class="contact-page__form-wrap">
+                        <h3 class="contakt-page__title-form">ЗВ’ЯЖІТЬСЯ З НАМИ</h3>
+                        <form class="contakt-page__form" name="contact-form" action="#">
+                            <div class="contakt-page__form-field">
+                                <input id="name" type="text" name="use-rname" placeholder=" " required minlength="2" pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Имя должно содержать символы кирилицы или латиницы" class="contakt-page__form-input" />
+                                <label class="contakt-page__form-label" for="name">iм’я</label>
+                            </div>
+
+                            </label>
+                            <div class="contakt-page__form-field contakt-page__form-field-mb">
+                                <input id="email" type="email" name="user-mail" placeholder=" " required minlength="2" class="contakt-page__form-input" />
+                                <label for="email" class="contakt-page__form-label">email</label>
+
+                            </div>
+                            <div class="textaria-wrap">
+                                <label class="contakt-page__form-field-textarea">
+              Повідомлення
+              <textarea class="contakt-page__form-textaria" name="message"
+                placeholder="Залишіть своє повідомлення"></textarea>
+            </label>
+                                <input class="hidden" name="add-file" type="file" id="file-upload" />
+                                <label for="file-upload" class="contact-page__add-file-label">
+              <svg class="textaria__icon" width="22" height="20">
+                <use href="./images/sprite.svg#icon-clip"></use>
+              </svg>
+            </label>
+                            </div>
+                            <p class="contakt-page__add-file-text">
+                                *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
+                            </p>
+                            <button type="submit" class="main-button contact-page__main-button button">Відправити</button>
+                        </form>
+                    </div>
+                    <div class="contakt-page__contacts">
+                        <div class="contact-wraper">
+                            <h3 class="contakt-page__title-contacts">ТЕЛЕФОНИ</h3>
+                            <ul class="contakt-page__contacts-list list">
+                                <li class="contakt-page__contacts-item">
+                                    <a class="contakt-page__contacts-link" href="tel:+380957384551">+38 (095) -73-84-551</a>
+                                </li>
+                                <li class="contakt-page__contacts-item">
+                                    <a class="contakt-page__contacts-link" href="tel:+380980025235">+38 (098) -00-25-235</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contact-wraper">
+                            <h3 class="contakt-page__title-contacts">Email</h3>
+                            <ul class="contakt-page__contacts-list list">
+                                <li class="contakt-page__contacts-item">
+                                    <a class="contakt-page__contacts-link" href="mailto:webstudio.info@gmail.com">webstudio.info@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contact-wraper">
+                            <h3 class="contakt-page__title-contacts">Робочий час</h3>
+                            <ul class="contakt-page__contacts-list list">
+                                <li class="contakt-page__contacts-item">
+                                    <span class="contact-breakword">Пн-пт: </span><span class="contact-breakword">з 8:00 до 19:00</span>
+                                </li>
+                                <li class="contakt-page__contacts-item">
+                                    <span class="contact-breakword">Сб, Нд: </span><span class="contact-breakword">з 10:00 до 17:00</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- -------------------------------FOOTER------------------------------ -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="tablet-container">
+                <div class="address-container">
+                    <a href="/" class="logo footer__logo">
+                        <spun class="logo__text_accent-color">Web</spun>Studio
+                    </a>
+                    <address class="address">
+              <spun class="address__text">г. Киев, пр-т Леси Украинки, 26</spun><br />
+              <a
+                href="mailto:info@example.com"
+                class="address__link address__link_margin_inline-block"
+                >info@example.com</a
+              ><br />
+              <a href="tel:+380961111111" class="address__link">+38 099 111 11 11</a>
+            </address>
+                </div>
+                <div class="social-wrapper">
+                    <p class="social-wrapper__text">присоединяйтесь</p>
+                    <ul class="social-links list">
+                        <li class="social-links__item">
+                            <a class="social-links__item-link social-links__item-link_white-color" href="">
+                                <svg class="icon-instagram soc-icon">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                            </a>
+                        </li>
+                        <li class="social-links__item">
+                            <a class="social-links__item-link social-links__item-link_white-color" href="">
+                                <svg class="icon-twitter soc-icon">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                            </a>
+                        </li>
+                        <li class="social-links__item">
+                            <a class="social-links__item-link social-links__item-link_white-color" href="">
+                                <svg class="icon-facebook soc-icon">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                            </a>
+                        </li>
+                        <li class="social-links__item">
+                            <a class="social-links__item-link social-links__item-link_white-color" href="">
+                                <svg class="icon-linkedin soc-icon">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="form-wrapper">
+                <p class="form-wrapper__head">Подпишитесь на рассылку</p>
+                <form class="form" action="#">
+                    <input class="form__input" type="email" name="e-mail" placeholder="E-mail" />
+                    <button class="button form__button" type="submit">
+              <span>Подписаться</span>
+              <span class="form__img-wrapper">
+                <img class="form__img" src="./images/icon-send.svg" width="24" height="24" />
+              </span>
+            </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
